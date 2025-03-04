@@ -6,135 +6,239 @@
     <title>Kavora Wear - Women's Fashion</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fff;
-            color: #333;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        color: #333;
+    }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #d5d8dc;
-            flex-wrap: wrap;
-        }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #d5d8dc;
+    }
 
-        .logo {
-            width: 120px;
-        }
+    .logo {
+        width: 150px;
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            padding: 0;
-        }
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
 
-        nav ul li {
-            margin: 0 15px;
-        }
+    nav ul li {
+        margin: 0 15px;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
 
-        .hero {
-            text-align: center;
-            padding: 150px 20px;
-            background: url('https://i.postimg.cc/dtdvnC2L/randil-perera-Create-a-stylish-and-elegant-text-logo-that-says-c58eaa50-811b-4fff-9481-38a3bf2460a.png') no-repeat center center/cover;
-            color: white;
-        }
+    .hero {
+        text-align: center;
+        padding: 250px;
+        background: url('https://i.postimg.cc/dtdvnC2L/randil-perera-Create-a-stylish-and-elegant-text-logo-that-says-c58eaa50-811b-4fff-9481-38a3bf2460a.png') no-repeat center center/cover;
+        color: white;
+    }
 
-        .btn {
-            background: #c07f7f;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+    .btn {
+        background: #c07f7f;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+    }
 
-        .product-grid {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
+    @import url('https://fonts.googleapis.com/css2?family=TT+Biersal&display=swap');
 
-        .product {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            text-align: center;
-        }
+    .exclusive-heading {
+        font-family: 'TT Biersal', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #d4af37; /* Gold color */
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* 3D shadow effect */
+        text-align: center;
+        margin-top: 20px;
+    }
 
-        .product:hover {
-            transform: scale(1.05);
-        }
+    .products {
+        text-align: center;
+        padding: 50px;
+    }
 
-        .product img {
-            width: 100%;
-            max-width: 250px;
-            height: auto;
-            border-radius: 5px;
-        }
+    .product-grid {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 
-        .about, .contact {
-            text-align: center;
-            padding: 20px;
-            background: #f8e1e1;
-            margin: 20px;
-            border-radius: 10px;
-        }
+    .product {
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
+    .product:hover {
+        transform: scale(1.05);
+    }
 
-        .footer {
-            text-align: center;
-            padding: 20px;
-            background: #d5d8dc;
-            color: white;
-            font-weight: bold;
-        }
+    .product img {
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 
-        /* Responsive Design */
-        @media screen and (max-width: 768px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
+    .product button {
+        background: #e4a9a8;
+        border: none;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-                padding: 0;
-            }
+    .product button:hover {
+        background: #c07f7f;
+    }
 
-            .hero {
-                padding: 100px 20px;
-            }
+    .about, .contact {
+        text-align: center;
+        padding: 40px;
+        background: #f8e1e1;
+        border-radius: 10px;
+        margin: 20px;
+    }
 
-            .product-grid {
-                flex-direction: column;
-                align-items: center;
-            }
+    .about-heading {
+        text-align: center;
+        padding: 40px;
+        background: #f8e1e1;
+        font-size: 28px;
+        font-weight: bold;
+        border-radius: 10px;
+        margin: 20px;
+        color: #d4af37; /* Rose gold color */
+    }
 
-            .about, .contact {
-                margin: 10px;
-            }
-        }
-    </style>
+    .about-text {
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        background-color: #fff5f8;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 800px;
+        margin: 40px auto;
+    }
+
+    .contact-heading {
+        font-size: 32px;
+        font-weight: bold;
+        color: #d4af37; /* Rose gold color */
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .contact-info a {
+        color: #d91e5b; /* Elegant pink */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .contact-info a:hover {
+        text-decoration: underline;
+    }
+
+    .contact-social {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .social-btn {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 8px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .social-btn i {
+        font-size: 22px;
+    }
+
+    .instagram {
+        background-color: #E1306C;
+    }
+
+    .instagram:hover {
+        background-color: #C2275B;
+    }
+
+    .facebook {
+        background-color: #1877F2;
+    }
+
+    .facebook:hover {
+        background-color: #155DB2;
+    }
+
+    .twitter {
+        background-color: #1DA1F2;
+    }
+
+    .twitter:hover {
+        background-color: #0C85D0;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background: #d5d8dc;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1em;
+    }
+</style>
+
 </head>
 <body>
     <header>
